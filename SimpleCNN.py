@@ -373,7 +373,7 @@ def get_mnist_dataloaders(samples_per_batch: int,
 
 #------------------ Main Entry ------------------#
 if __name__ == "__main__":
-    # Initialize model, loss function and optimizer
+    # Initialize model, loss function, optimizer and device
     cnn_model, loss_fn, adam_optimizer, h_device = _setup_model_for_training(
                                                             num_class,learning_rate)
     # Initialize MNIST data loaders
