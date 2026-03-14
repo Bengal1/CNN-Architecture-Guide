@@ -200,24 +200,28 @@ class SimpleCNN(nn.Module):
         super(SimpleCNN, self).__init__()
 
         # Convolutional layers
-        self.conv1 = nn.Conv2d(in_channels=1, out_channels=32, kernel_size=5)
-        self.conv2 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=5)
+        self.conv1 = nn.Conv2d(in_channels=input_channels,
+                               out_channels=conv1_out_channels,
+                               kernel_size=conv_kernel_size)
+        self.conv2 = nn.Conv2d(in_channels=conv1_out_channels,
+                               out_channels=conv2_out_channels,
+                               kernel_size=conv_kernel_size)
 
         # Max-Pooling layers
-        self.max1 = nn.MaxPool2d(kernel_size=2, stride=2)
-        self.max2 = nn.MaxPool2d(kernel_size=2, stride=2)
+        self.max1 = nn.MaxPool2d(kernel_size=pool_kernel_size, stride=pool_stride)
+        self.max2 = nn.MaxPool2d(kernel_size=pool_kernel_size, stride=pool_stride)
 
         # Fully-Connected layers
-        self.fc1 = nn.Linear(in_features=64 * 4 * 4, out_features=512)
-        self.fc2 = nn.Linear(in_features=512, out_features=num_classes)
+        self.fc1 = nn.Linear(in_features=fc1_in, out_features=fc2_in)
+        self.fc2 = nn.Linear(in_features=fc2_in, out_features=num_classes)
 
         # Dropout
-        self.dropout1 = nn.Dropout(p=0.45)
-        self.dropout2 = nn.Dropout(p=0.35)
+        self.dropout1 = nn.Dropout(p=dropout1_rate)
+        self.dropout2 = nn.Dropout(p=dropout2_rate)
 
         # Batch Normalization
-        self.batch1 = nn.BatchNorm2d(num_features=32)
-        self.batch2 = nn.BatchNorm2d(num_features=64)
+        self.batch1 = nn.BatchNorm2d(num_features=conv1_out_channels)
+        self.batch2 = nn.BatchNorm2d(num_features=conv2_out_channels)
 ```
 
 ### Training Epoch
