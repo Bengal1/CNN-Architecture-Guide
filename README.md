@@ -1,13 +1,15 @@
 # CNN Architecture Guide with PyTorch
 
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-CNN-EE4C2C?logo=pytorch&logoColor=white)
+![CNN](https://img.shields.io/badge/Deep%20Learning-CNN-8A2BE2)
+![MNIST](https://img.shields.io/badge/Dataset-MNIST-4B8BBE)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 This repository provides a guide for building [*Convolutional Neural Networks (CNNs)*](https://en.wikipedia.org/wiki/Convolutional_neural_network) in PyTorch, aimed at beginners who want to understand how CNNs work and how to implement them. It combines theoretical explanations of key concepts from [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning), such as the network architecture, Cross-Entropy Loss, and the Adam optimizer, with code implementation that showcase how these components come together in practice. <br/>
 CNNs are widely used in [Computer Vision](https://en.wikipedia.org/wiki/Computer_vision) tasks, such as image classification, object detection, and image generation. 
 
 This repository is built for learning purposes and helps beginners get started with coding neural networks and understanding their key components.
-
-## Requirements
-- [![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)](https://www.python.org/) <br/>
-- [![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/) <br/>
 
 ## Convolutional Neural Network (CNN)
 A Convolutional Neural Network (CNN) is a type of feed-forward network that learns to perform tasks such as classification by optimizing its parameters (features). For each input, the network performs a forward pass, computing the outputs of each layer and storing intermediate activations. The loss is then calculated using the chosen loss function. During [*Backpropagation*](https://en.wikipedia.org/wiki/Backpropagation), the network updates its parameters using a gradient descent algorithm, moving toward a (local) minimum of the loss.
