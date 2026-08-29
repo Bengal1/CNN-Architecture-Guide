@@ -6,7 +6,7 @@
 ![MNIST](https://img.shields.io/badge/Dataset-MNIST-4B8BBE)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-<img align="center" width="100%" alt="cnn_guide_banner" src="https://github.com/user-attachments/assets/3ad785a4-ab08-4095-b8ca-cf04907c7f69" />
+<img align="center" width="100%" alt="cnn_guide_banner" src="https://github.com/user-attachments/assets/3ad785a4-ab08-4095-b8ca-cf04907c7f69" /> </br>
 
 This repository provides a guide for building [*Convolutional Neural Networks (CNNs)*](https://en.wikipedia.org/wiki/Convolutional_neural_network) in PyTorch, aimed at beginners who want to understand how CNNs work and how to implement them. It combines theoretical explanations of key concepts from [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning), such as the network architecture, Cross-Entropy Loss, and the Adam optimizer, with code implementation that showcase how these components come together in practice. <br/>
 CNNs are widely used in [Computer Vision](https://en.wikipedia.org/wiki/Computer_vision) tasks, such as image classification, object detection, and image generation. 
