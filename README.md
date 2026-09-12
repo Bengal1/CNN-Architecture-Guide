@@ -156,7 +156,7 @@ MNIST is a classic dataset of handwritten digits and is often referred to as the
 
 This network is trained on the MNIST dataset, which consists of grayscale images of handwritten single-digit numbers (0–9). The task for the network is to classify each input image into the correct digit class. The dataset contains 70,000 images, with 60,000 images used for training and 10,000 images for testing.
 
-<img src="https://user-images.githubusercontent.com/34989887/204675687-03f39aeb-1039-4abc-aec5-7f1d6cbbe52e.png" width="350" height="350"/>
+<img align="right"  src="https://user-images.githubusercontent.com/34989887/204675687-03f39aeb-1039-4abc-aec5-7f1d6cbbe52e.png" width="350" height="350"/>
 
 For more information on the [MNIST Dataset](https://en.wikipedia.org/wiki/MNIST_database).
 
